@@ -100,10 +100,13 @@ img.ex-9-img:hover {
 /* Esercizio 10 */
 i.ex-10-icon {
   animation-name: spin;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes spin {
-  transform: rotate(20deg);
+  0% {
+    transform: rotate(360deg);
+  }
 }
