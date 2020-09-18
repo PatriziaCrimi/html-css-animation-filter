@@ -97,8 +97,8 @@ img.ex-9-img:hover {
   transform: scale(1.5);
 }
 
-/* Esercizio 10 */
-i.ex-10-icon {
+/* Esercizio 10 - SOLUZIONE ESTESA */
+/* i.ex-10-icon {
   animation-name: spin;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -108,5 +108,33 @@ i.ex-10-icon {
 @keyframes spin {
   0% {
     transform: rotate(360deg);
+  }
+} */
+
+/* Esercizio 10 - SHORTCUT */
+i.ex-10-icon {
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Esercizio 11 - SOLUZIONE ESTESA */
+i.ex-11-icon:hover {
+  animation-name: spin-three-quarters;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin-three-quarters {
+  50% {
+    transform: rotate(-360deg);
+  }
+  50% {
+    transform: rotate(270deg);
   }
 }
