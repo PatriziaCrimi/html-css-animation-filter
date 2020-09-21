@@ -64,7 +64,7 @@
 
 /* Esercizio 6 */
 img.ex-6-img:hover{
-  filter: grayscale(20);
+  filter: grayscale(1);
 }
 
 /* Esercizio 7 */
@@ -110,11 +110,22 @@ i.ex-10-icon {
   animation: spin 1s infinite linear;
 }
 
+/* Esercizio 10 - Anticlockwise */
 @keyframes spin {
   0% {
     transform: rotate(360deg);
   }
 }
+
+/* Esercizio 10 - Clockwise */
+/* @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
 
 /* Esercizio 11 - SOLUZIONE ESTESA */
 /* i.ex-11-icon:hover {
@@ -166,7 +177,7 @@ a.ex-12-button:hover .ex-12-bottom-white {
     left: 10%;
   }
   50% {
-    left: calc(100% - 60px);
+  left: calc(100% - 60px);  /* OPPURE left: 60%; */
   }
   100% {
     left: 10%;
@@ -178,7 +189,7 @@ a.ex-12-button:hover .ex-12-bottom-white {
     right: 20%;
   }
   50% {
-    right: calc(100% - 60px);
+    right: calc(100% - 60px); /* OPPURE right: 60%; */
   }
   100% {
     right: 20%;
@@ -217,14 +228,14 @@ a.ex-13-button:hover .ex-13-bottom-white {
   }
   40% {
     left: calc(100% - 30px);
-    top: 100%;
+    top: calc(100% - 10px);
   }
   60% {
-    left: -15px;
-    top: 100%;
+    left: -20px;
+    top: calc(100% - 10px);
   }
   80% {
-    left: -15px;
+    left: -20px;
     top: -10px;
   }
   100% {
@@ -244,11 +255,11 @@ a.ex-13-button:hover .ex-13-bottom-white {
   }
   40% {
     right: calc(100% - 45px);
-    bottom: 100%;
+    bottom: calc(100% - 10px);
   }
   60% {
     right: -30px;
-    bottom: 100%;
+    bottom: calc(100% - 10px);
   }
   80% {
     right: -30px;
@@ -259,3 +270,8 @@ a.ex-13-button:hover .ex-13-bottom-white {
     bottom: -10px;
   }
 }
+
+/* SHORTCUT PER TRANSITION */
+/* .ex-1-square, .ex-2-square, .ex-3-square, .ex-4-square, .ex-5-square, img.ex-7-img, img.ex-8-img, img.ex-9-img {
+  transition: all 3s;
+} */
